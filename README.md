@@ -1,6 +1,8 @@
 # Madrid Metro Stations Reviews Classifier
 
-Welcome to Madrid Metro Stations Reviews Classifier!! Here, we provide the code used to conduct experiments aimed at comparing models for automatically distinguishing relevant from irrelevant reviews of Madrid Metro statins. 
+Welcome to Madrid Metro Stations Reviews Classifier!!
+
+Here, we provide the code used to conduct experiments aimed at comparing models for automatically distinguishing relevant from irrelevant reviews of Madrid Metro statins. 
 
 ## Content 
 - **ComparingModels.ipynb**: This Jupyter Notebook contains the complete code for the experiments.
@@ -8,7 +10,7 @@ Welcome to Madrid Metro Stations Reviews Classifier!! Here, we provide the code 
 ## Instructions
 To filter only the comments belonging to the Airport or Hospital stations from the dataset, follow these steps:
 1. Open the file `ComparingModels.ipynb`.
-2. If you want to select only the reviews that pertains to 'Hospital' or 'Airport' stations, add one of the following lines:
+2. If you want to select only the reviews that pertain to 'Hospital' or 'Airport' stations, add one of the following lines:
     ```python
     df = df[df['Estación'].str.contains('Hospital')]
     ```
