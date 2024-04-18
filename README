@@ -1,1 +1,17 @@
-hola
+In this repository, we present the code used to conduct experiments related to comparing models 
+for automatically distinguishing relevant from irrelevant reviews of Madrid metro stations.
+
+In the file ComparingModels.ipynb, you can find the complete code. 
+To obtain only those comments belonging to the Airport or Hospital stations, you need to add the following code:
+
+df = df[df['Estación'].str.contains('Hospital')]
+or
+df = df[df['Estación'].str.contains('Aeropuerto')]
+after
+df = pd.read_excel('TODAS_ESTACIONES.xlsx')
+
+In the files AllComments_1.xlsx and AllComments_2.xlsx, two randomly selected subsets of 1,000 comments each can be obtained.
+
+You can use these files as substitutes for the TODAS_ESTACIONES.xlsx.
+
+The results obtained in all the experiments performed for this work can be seen in 
