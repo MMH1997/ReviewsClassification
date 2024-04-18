@@ -8,8 +8,7 @@ Welcome to Madrid Metro Stations Reviews Classifier!! Here, we provide the code 
 ## Instructions
 To filter only the comments belonging to the Airport or Hospital stations from the dataset, follow these steps:
 1. Open the file `ComparingModels.ipynb`.
-2. Locate the section where the data is loaded from the Excel file (`TODAS_ESTACIONES.xlsx`).
-3. Add one of the following lines of code after loading the data:
+2. If you want to select only the reviews that pertains to 'Hospital' or 'Airport' stations, add one of the following lines:
     ```python
     df = df[df['Estación'].str.contains('Hospital')]
     ```
@@ -17,8 +16,12 @@ To filter only the comments belonging to the Airport or Hospital stations from t
     ```python
     df = df[df['Estación'].str.contains('Aeropuerto')]
     ```
+    after
+   ```python
+   df = pd.read_excel('TODAS_ESTACIONES.xlsx')
+   ```
 
-4. Run the notebook to apply the filter.
+5. Run the notebook to apply the filter.
 
 ## Data
 
